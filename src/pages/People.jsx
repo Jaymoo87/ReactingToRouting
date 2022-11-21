@@ -19,7 +19,7 @@ const People = () => {
       <ul className="list-group">
         {people.map((person) => (
           <li key={`user-${person.id}`} className="list-group-item d-flex justify-content-between alighn-items-center">
-            {person.username}
+            {person.name}
             <Link to={`/people/${person.id}`} className="btn btn-primary">
               Full Details
             </Link>

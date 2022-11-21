@@ -1,8 +1,10 @@
 import React from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
+
+import Navbar from "./components/Navbar";
+import Films from "./pages/Films";
 import People from "./pages/People";
 import Home from "./pages/Home";
-import Navbar from "./components/Navbar";
 
 const App = () => {
   return (
@@ -13,7 +15,7 @@ const App = () => {
           <Routes>
             <Route path="/" element={<Home />}></Route>
             <Route path="/people" element={<People />}></Route>
-            {/* <Route path="/films" element={<Film />}></Route> */}
+            <Route path="/films" element={<Films />}></Route>
             {/* <Route
               path="/users/:userid"
               element={

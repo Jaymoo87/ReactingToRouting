@@ -3,12 +3,15 @@ import { NavLink } from "react-router-dom";
 
 const Navbar = () => {
   return (
-    <div className="nav">
+    <div className="nav d=flex justify-content-around bg-info p-3">
       <NavLink to="/" className={({ isActive }) => `nav-link ${isActive ? "active btn btn-success" : null}`}>
         Home
       </NavLink>
       <NavLink to="/people" className={({ isActive }) => `nav-link ${isActive ? "active btn btn-success" : null}`}>
-        About
+        People
+      </NavLink>
+      <NavLink to="/films" className={({ isActive }) => `nav-link ${isActive ? "active btn btn-success" : null}`}>
+        Films
       </NavLink>
     </div>
   );
