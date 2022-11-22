@@ -3,17 +3,32 @@ import { NavLink } from "react-router-dom";
 
 const Navbar = () => {
   return (
-    <div className="nav d=flex justify-content-around bg-info p-3">
-      <NavLink to="/" className={({ isActive }) => `nav-link ${isActive ? "active btn btn-success" : null}`}>
+    <nav className="nav d=flex justify-content-around bg-secondary p-3 text-dark">
+      <NavLink
+        to="/"
+        className={({ isActive }) =>
+          `nav-link ${isActive ? "active btn btn-secondary text-light" : "btn btn-secondary text-light"}`
+        }
+      >
         Home
       </NavLink>
-      <NavLink to="/people" className={({ isActive }) => `nav-link ${isActive ? "active btn btn-success" : null}`}>
+      <NavLink
+        to="/people"
+        className={({ isActive }) =>
+          `nav-link ${isActive ? "active btn btn-secondary text-light" : "btn btn-secondary text-light"}`
+        }
+      >
         People
       </NavLink>
-      <NavLink to="/films" className={({ isActive }) => `nav-link ${isActive ? "active btn btn-success" : null}`}>
+      <NavLink
+        to="/films"
+        className={({ isActive }) =>
+          `nav-link ${isActive ? "active btn btn-secondary text-light" : "btn btn-secondary text-light"}`
+        }
+      >
         Films
       </NavLink>
-    </div>
+    </nav>
   );
 };
 

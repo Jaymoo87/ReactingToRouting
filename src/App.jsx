@@ -5,6 +5,7 @@ import Navbar from "./components/Navbar";
 import Films from "./pages/Films";
 import People from "./pages/People";
 import Home from "./pages/Home";
+import PeopleDetails from "./pages/PeopleDetails";
 
 const App = () => {
   return (
@@ -16,11 +17,19 @@ const App = () => {
             <Route path="/" element={<Home />}></Route>
             <Route path="/people" element={<People />}></Route>
             <Route path="/films" element={<Films />}></Route>
-            {/* <Route
-              path="/users/:userid"
+            <Route
+              path="/people/:personid"
               element={
                 <h1>
-                  <UserDetails />
+                  <PeopleDetails />
+                </h1>
+              }
+            ></Route>
+            {/* <Route
+              path="/films/:filmid"
+              element={
+                <h1>
+                  <FilmDetails />
                 </h1>
               }
             ></Route> */}

@@ -18,7 +18,7 @@ const Films = () => {
         {films.map((film) => (
           <li key={`user-${film.id}`} className="list-group-item d-flex justify-content-between alighn-items-center">
             {film.title}
-            <Link to={`/films/${film.id}`} className="btn btn-primary">
+            <Link to={`/films/${film.id}`} className="btn btn-dark">
               Full Details
             </Link>
           </li>

@@ -18,9 +18,9 @@ const People = () => {
     <div className="col-md-6">
       <ul className="list-group">
         {people.map((person) => (
-          <li key={`user-${person.id}`} className="list-group-item d-flex justify-content-between alighn-items-center">
+          <li key={`person-${person.id}`} className="list-group-item d-flex justify-content-between align-items-center">
             {person.name}
-            <Link to={`/people/${person.id}`} className="btn btn-primary">
+            <Link to={`/people/${person.id}`} className="btn btn-dark">
               Full Details
             </Link>
           </li>
