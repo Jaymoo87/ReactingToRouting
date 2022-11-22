@@ -3,11 +3,13 @@ import { NavLink } from "react-router-dom";
 
 const Navbar = () => {
   return (
-    <nav className="nav d=flex justify-content-around bg-secondary p-3 text-dark">
+    <nav className="nav d=flex justify-content-around bg-dark p-3 text-dark">
       <NavLink
         to="/"
         className={({ isActive }) =>
-          `nav-link ${isActive ? "active btn btn-secondary text-light" : "btn btn-secondary text-light"}`
+          `nav-link ${
+            isActive ? "active btn btn-dark text-secondary btn-outline-dark" : "btn btn-secondary text-light"
+          }`
         }
       >
         Home
@@ -15,7 +17,9 @@ const Navbar = () => {
       <NavLink
         to="/people"
         className={({ isActive }) =>
-          `nav-link ${isActive ? "active btn btn-secondary text-light" : "btn btn-secondary text-light"}`
+          `nav-link ${
+            isActive ? "active btn btn-dark text-secondary btn-outline-dark" : "btn btn-secondary text-light"
+          }`
         }
       >
         People
@@ -23,7 +27,9 @@ const Navbar = () => {
       <NavLink
         to="/films"
         className={({ isActive }) =>
-          `nav-link ${isActive ? "active btn btn-secondary text-light" : "btn btn-secondary text-light"}`
+          `nav-link ${
+            isActive ? "active btn btn-dark text-secondary btn-outline-dark" : "btn btn-secondary text-light"
+          }`
         }
       >
         Films

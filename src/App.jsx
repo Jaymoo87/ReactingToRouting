@@ -6,6 +6,7 @@ import Films from "./pages/Films";
 import People from "./pages/People";
 import Home from "./pages/Home";
 import PeopleDetails from "./pages/PeopleDetails";
+import FilmDetails from "./pages/FilmDetails";
 
 const App = () => {
   return (
@@ -25,14 +26,14 @@ const App = () => {
                 </h1>
               }
             ></Route>
-            {/* <Route
+            <Route
               path="/films/:filmid"
               element={
                 <h1>
                   <FilmDetails />
                 </h1>
               }
-            ></Route> */}
+            ></Route>
             <Route path="*" element={<h1>404 Not Found</h1>}></Route>
           </Routes>
         </section>
