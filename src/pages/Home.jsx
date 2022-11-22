@@ -20,11 +20,11 @@ const Home = () => {
       </div>
       <div className="d-flex justify-content-center">
         <Link to="./people">
-          <button className="btn btn-primary m-3">People</button>
+          <button className="btn btn-secondary btn-outline-dark m-3">People</button>
         </Link>
 
         <Link to="./films">
-          <button className="btn btn-primary m-3">Films</button>
+          <button className="btn btn-secondary btn-outline-dark m-3">Films</button>
         </Link>
       </div>
     </div>
